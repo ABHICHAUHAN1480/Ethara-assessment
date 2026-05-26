@@ -1,84 +1,67 @@
 # ERROR: HUMAN_FOUND
 
-Live: [https://ethara-assessment-k44c.vercel.app/](https://ethara-assessment-k44c.vercel.app/)
+Live demo: https://ethara-assessment-l1nx.vercel.app/
 
-`ERROR: HUMAN_FOUND` is a browser-based cinematic AI operating-system game where the player becomes the last human programmer discovered after a global AI collapse. The mission is to debug corrupted sectors, repair logic systems, stabilize networks, and reach the Core Intelligence.
+`ERROR: HUMAN_FOUND` is a browser-based cyberpunk hacking simulator built with Next.js, React, TypeScript, Zustand, Tailwind CSS, Framer Motion, Three.js, GLSL shaders, IndexedDB, localStorage, and the Web Audio API.
 
-## Tech Stack
-
-- Next.js
-- React
-- Tailwind CSS
-- Framer Motion
-- GSAP
-- Three.js
-- Zustand
-- localStorage
-- IndexedDB
-
-## Gameplay
-
-The game combines hacking-simulator interactions, debugging puzzles, terminal commands, AI communication, cinematic storytelling, pattern recognition, and logic reconstruction.
-
-Core loop:
-
-1. Enter a corrupted AI sector
-2. Analyze corruption
-3. Use terminal commands
-4. Solve the sector puzzle
-5. Restore stability
-6. Unlock deeper AI layers
-7. Reach Core Intelligence
-
-## Terminal Commands
-
-Available commands:
-
-```txt
-scan
-repair
-decrypt
-trace
-override
-stabilize
-inject
-```
-
-Each sector requires a different command sequence. Correct execution lowers corruption, raises stability, and unlocks deeper sectors.
-
-## Game Sectors
-
-- `1-20` Syntax Bug Sector
-- `20-35` Logic Error Sector
-- `35-50` Corruption Sector
-- `50-70` Recursion Sector
-- `70-90` Artificial Intelligence Sector
-- `90-100` Core Intelligence Sector
+The game places the player as the last surviving human programmer discovered by a collapsing AI operating system. The mission is to repair corrupted AI sectors, stabilize digital infrastructure, recover lost data, and uncover the origin of the corruption inside the Core Intelligence.
 
 ## Features
 
-- Cinematic boot sequence
-- Intro cinematic with AI collapse story
-- Holographic mainframe sector map
-- Debug terminal with animated command feedback
-- Corruption-driven UI instability
-- AI communication panels with emotional states
-- Sector progress, stability, achievements, and corruption stats
-- Autosave using localStorage and IndexedDB
-- Accessibility settings
-- Reduced motion support
-- High contrast mode
-- Colorblind assistance
-- UI scaling
-- Keyboard navigation support
-- Browser-only architecture with no backend
+- Cinematic boot screen and intro sequence
+- AI mainframe hub with sector progression
+- Real-time Three.js cyberpunk sector environment
+- GLSL holographic shader effects
+- Terminal system with command history and Tab autocomplete
+- Commands: `scan`, `decrypt`, `repair`, `trace`, `stabilize`, `override`, `inject`, `help`, `status`, `clear`
+- 100 progressive levels across six AI sectors
+- Puzzle validation and sector restoration loop
+- Dynamic AI dialogue and evolving AI mood state
+- Pause menu, settings menu, achievements screen, warning screen, and final core chamber
+- Zustand global state management
+- IndexedDB autosave and recovery
+- localStorage graphics/audio/accessibility preferences
+- Web Audio generated ambience and interaction effects
+- Responsive holographic UI with scanlines, glass panels, and glitch styling
 
-## Local Setup
+## Sector Progression
+
+The game includes 100 levels divided into major AI sectors:
+
+| Levels | Sector | Focus |
+| --- | --- | --- |
+| 1-20 | Syntax Bug Sector | Syntax repair, command reconstruction, terminal recovery |
+| 21-35 | Logic Error Sector | Contradictions, algorithm repair, sequence correction |
+| 36-50 | Corruption Sector | Memory recovery, archive reconstruction, data cleansing |
+| 51-70 | Recursion Sector | Recursive systems, dependency repair, loop navigation |
+| 71-90 | Artificial Intelligence Sector | Adaptive AI behavior, prediction, interface manipulation |
+| 91-100 | Core Intelligence Sector | Final combined debugging and AI confrontation |
+
+## Tech Stack
+
+- Framework: Next.js 14
+- UI: React 18, TypeScript
+- Styling: Tailwind CSS, CSS utilities
+- Animation: Framer Motion, GSAP dependency available
+- 3D rendering: Three.js, React Three Fiber
+- Shaders: GLSL
+- State: Zustand
+- Storage: IndexedDB and localStorage
+- Audio: Web Audio API
+- Icons: Lucide React
+
+## Getting Started
 
 Install dependencies:
 
 ```bash
 npm install
+```
+
+On Windows PowerShell, if `npm` is blocked by execution policy, use:
+
+```bash
+npm.cmd install
 ```
 
 Run the development server:
@@ -87,59 +70,128 @@ Run the development server:
 npm run dev
 ```
 
-Open:
+Or on Windows PowerShell:
 
-```txt
+```bash
+npm.cmd run dev
+```
+
+Open the app:
+
+```text
 http://localhost:3000
 ```
 
-## Build
+## Scripts
+
+```bash
+npm run dev
+```
+
+Starts the local development server.
 
 ```bash
 npm run build
 ```
 
-Start production build:
+Creates an optimized production build.
 
 ```bash
 npm run start
 ```
 
+Runs the production build locally.
+
+```bash
+npm run lint
+```
+
+Runs Next.js ESLint checks.
+
+```bash
+npm run typecheck
+```
+
+Runs TypeScript validation without emitting files.
+
 ## Project Structure
 
-```txt
-app/
-components/
-components/three/
-data/
-hooks/
-lib/
-store/
-types/
+```text
+src/
+  app/
+    globals.css
+    layout.tsx
+    page.tsx
+  components/
+    game/
+      GameShell.tsx
+      PuzzlePanel.tsx
+      TerminalInterface.tsx
+    screens/
+      AchievementsScreen.tsx
+      BootScreen.tsx
+      CorruptionWarningScreen.tsx
+      FinalCoreScreen.tsx
+      IntroCinematic.tsx
+      MainframeScreen.tsx
+      SectorGameplayScreen.tsx
+      SettingsScreen.tsx
+    three/
+      DigitalSectorScene.tsx
+    ui/
+      ActionButton.tsx
+      AIDialogue.tsx
+      HUD.tsx
+      HoloPanel.tsx
+      PauseMenu.tsx
+      ScanlineOverlay.tsx
+  data/
+    achievements.ts
+    sectors.ts
+  hooks/
+    useAudioSystem.ts
+    useGameHotkeys.ts
+  lib/
+    audioEngine.ts
+    puzzleEngine.ts
+    shaders.ts
+    storage.ts
+    terminalCommands.ts
+  stores/
+    gameStore.ts
+  types/
+    game.ts
 ```
+
+## Gameplay Controls
+
+| Input | Action |
+| --- | --- |
+| WASD | Move the sector field |
+| Enter | Execute terminal command or submit active input |
+| Tab | Autocomplete terminal command |
+| Arrow Up / Down | Navigate terminal command history |
+| Escape | Pause or exit menu screens |
+| Mouse | Interact with panels, settings, puzzles, and menus |
 
 ## Save System
 
-Progress, restored sectors, settings, achievements, command history, and story flags are saved locally in the browser using:
+The game autosaves player progress using IndexedDB:
 
-- `localStorage`
-- `IndexedDB`
+- Current level
+- Unlocked level
+- Restored sectors
+- Unlocked terminal commands
+- Achievements
+- AI evolution state
+- Corruption state
+- Settings snapshot
 
-No backend, database, authentication, cloud storage, APIs, or user profiles are used.
+Graphics, audio, accessibility, and scanline preferences are also stored in localStorage.
 
-## Accessibility
+## Notes
 
-The game includes:
+- The `.next` folder is generated by Next.js and should not be edited manually.
+- `node_modules` and `.next` should not be committed to source control.
+- The game is client-heavy by design because it uses browser APIs, WebGL, IndexedDB, and Web Audio.
 
-- Subtitles
-- Reduced motion mode
-- High contrast mode
-- Colorblind assistance
-- UI scaling
-- Keyboard controls
-
-## Deployment
-
-The project is deployed on Vercel:
-
-[https://ethara-assessment-k44c.vercel.app/](https://ethara-assessment-k44c.vercel.app/)
