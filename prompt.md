@@ -1,295 +1,246 @@
-Create a browser-based game named "ERROR: HUMAN_FOUND". The game should feel like a cinematic AI operating system, not a normal website.
-Tech stack: next.js, react , tailwind CSS, Framer motion, GSAP, Three.js, Zustand, localStorage + IndexedDB
+Objective:
+ Create a Browser Based Game Named "ERROR: HUMAN_FOUND".
+ 
+ It should feel like: An AI operating System, Hacking Simulator, interactive experience, a futuristic digital world.
 
-No backend, authentication, database, APIs, cloud storage, or user profiles. Everything runs fully in the browser.
+ The Goal is to create an impressive gameplay experience that includes: puzzle solving,terminal interactions,good       
+ storytelling, futuristic UI systems,real-time visual effects, Good holographic interfaces.
 
-GAME STORY:
-In the future Ai has replaced all the developers. A bug spread through every AI system causing network collapse. One surviving human programmer is discovered. The player becomes “The Human Programmer” whose mission is to debug corrupted AI sectors, repair logic systems, stabilize networks, and restore the digital world.
-
-GAMEPLAY:
-Mix: hacking simulator, debugging gameplay, puzzle solving, cinematic storytelling, terminal interactions, AI exploration, pattern recognition, logic reconstruction
-
-Main gameplay loop:
-1. Enter corrupted sector
-2. Analyze corruption
-3. Use terminal commands
-4. Solve puzzles
-5. Restore stability
-6. Unlock deeper AI layers
-7. Reach Core Intelligence
-
-NEEDED SCREENS: 
-
-Boot Screen 
-
-- AI booting up 
-- scanlines 
-- glitch art 
-- loading screen/interface 
-- corruption messages 
-- booting terminal 
-- subtitles 
-- buttons: 
-- Begin Simulation 
-- Resume Debugging 
-- Settings 
-- Exit 
-
-Show: 
-
-INITIALIZING WORLDWIDE AI MAINFRAME... 
-LOOKING FOR HUMAN INTERACTIVITY... 
-ERROR: HUMAN_DETECTED 
+Context and Role:
+ You are a Senior Game developer who has expertise in UI/UX designing, cyberpunk visual artist, frontend 
+ architecture ,Three.js engineer,gameplay systems designer.
+ 
+ You are Responsible for designing scalable architecture, building  gameplay systems,creating interactions,
+ implementing futuristic animations,maintaining production-level code quality.
+ 
+ focus on modular architecture, impressive user experience,responsive gameplay,optimized rendering, smooth  
+ animations.
 
 
-Intro cinematic 
+GAME WORLD
 
-Show: 
-- AI conquering the world 
-- humans vanishing 
-- spreading corruption 
-- collapsing AI sectors 
-- emergency alert messages 
+In the future, AI systems replaced all human developers. A corruption bug spread across every AI network causing digital collapse. Entire sectors of cyberspace became unstable.
 
-Use: 
-- cinematic camera movement 
-- holograms 
-- distortion effects 
-- glitches/transitions 
-- subtitles 
+The player becomes the last surviving human programmer discovered by the AI systems.
 
-AI mainframe 
+The mission is to: repair corrupted AI sectors, stabilize collapsing systems, restore lost data, rebuild digital civilization uncover the origin of corruption.
 
-Create AI mainframe/minimap with: 
-- animated sectors/world map 
-- percentages of corruption 
-- activity of ai's 
-- achievements 
-- holographic ui floating in space 
-- futuristic looking ui 
-- no navbar 
+GAMEPLAY LOOP
 
+Main gameplay flow:
+1 Enter corrupted sector
+2 Analyze corrupted environment
+3 Access terminal systems
+4 Use commands to investigate corruption
+5 Solve logic and debugging puzzles
+6 Restore sector stability
+7 Unlock deeper AI layers
+8 Discover hidden lore
+9 Progress toward the Core Intelligence
 
-Sector gameplay/how game plays 
+APPLICATION SCREENS
 
-Each sector will consist of: 
+The game should include: Boot Screen, Intro Cinematic, AI Mainframe, Sector Gameplay Screen, Terminal Interface, Settings Menu, Pause Menu, Achievement Screen, Corruption Warning Screen, Final Core Intelligence Chamber.
+UI/UX DESIGN
 
-- it's own theme/ visuals 
-- puzzles 
-- unique AI that learns and adapts 
-- world/storybuilding 
-- gradually more difficult 
+UI style should include: holographic interfaces, glassmorphism panels, floating HUD elements, scanline overlay, neon cyberpunk aesthetics, futuristic typography, animated panels, distortion effects, responsive layouts
 
-Levels(In game sectors) 
+Color palette: black, dark blue, dark purple, neon cyan, holographic purple, glitch red.
 
-1–20 Syntax Bug Sector 
-- fixing syntax 
-- rebuilding commands 
-- debug terminal/databases 
+TERMINAL SYSTEM
 
-20–35 Logic Error Sector 
-- fixing contradictions 
-- repairing algorithms 
-- debugging infinite loops 
+The terminal should include blinking cursor, animated typing effects, command history, command auto-completion, scrolling diagnostics, fake filesystem, unlockable commands, glitch transitions, holographic terminal windows, animated responses
 
-35–50 Corruption Sector 
-- memory redo 
-- recover hidden sequences 
-- restore archive dumps 
+AI ENTITY SYSTEM
 
-50–70 Recursion Sector 
-- debugging recursion 
-- repairing dependencies 
-- recursing through data 
-
-70–90 Artificial Intelligence Sector 
-- AI logic 
-- predicting player paths 
-- evolving through playstyle 
-
-90–100 Core Intelligence Sector 
-- Mix of all previous levels 
-- AI learns from player 
-
-Terminal commands: 
-
-- scan 
-- repair 
-- decrypt 
-- trace 
-- override 
-- stabilize 
-- inject 
-
-Terminal: 
-
-- allow animation when typing commands 
-- blinking cursor 
-- holographic looking terminal windows 
-- glitches 
-- Visuals when commands are executed 
+AI entities should communicate dynamically, react to player actions, manipulate interface elements, interrupt gameplay, evolve visually over time, generate emotional dialogue, create psychological tension
 
 
-AI Communication 
+LEVEL / SECTOR PROGRESSION SYSTEM
 
-Make holographic panels that show AI communication. Use: 
-- glitchy subtitles 
-- emotional states of ai's 
-- cinematic transitions for dialogue. 
+The game contains 100 progressive levels divided into major AI sectors.
 
-Ex: 
-“Human logic is hard to understand.” 
-“Why save a species that thrives of chaos?”
+Each sector should introduce:
+- new mechanics
+- unique visuals
+- increasing corruption
+- evolving AI behavior
+- more complex puzzles
+- advanced terminal interactions
 
-
-Progress Bar: 
-- Sector completion 
-- % restored 
-- puzzle completions/stats 
-- achievements 
-- Corruption stats 
-- Unlocked abilities 
-
-Settings 
-- music 
-- graphics 
-- subtitles 
-- accessibility 
-- reduced motion 
-- high contrast 
-- Scale UI 
-- keyboard controls 
+Each sector should feel visually and mechanically different.
 
 
-Aesthetics: 
-- cyberpunk 
-- holograms 
-- neon lights 
-- glassmorphism 
-- scanlines 
-- floating pixels 
-COLORS:
-Primaries:
-- black
-- gray
-- dark blue
-- dark purple
+1–20 SYNTAX BUG SECTOR
 
-Accent:
-- neon cyan
-- neon blue
-- holographic purple
-- neon red
+Theme: broken code environments, fragmented terminals, unstable command systems, corrupted syntax structures
 
-Warnings:
-- glitch red
-- warning yellow
-- corrupted orange
+Gameplay: fixing syntax errors, rebuilding commands, repairing broken terminal systems, debugging corrupted databases
 
-HUD:
-Show:
-- sector name
-- corruption %
-- AI presence
-- objectives
-- terminal shortcuts
-- stability bar
+Puzzle Types: command reconstruction, syntax correction, missing character restoration, terminal repair systems
 
-Minimal HUD
+Visual Style: neon green terminals, fragmented text, scanline glitches, corrupted code particles
 
-ANIMATIONS:
-Animations used include:
-- Framer Motion
-- GSAP
-- Three.js
-- WebGL shaders
 
-Includes:
-- glitching transitions
-- flickering
-- recursive animation
-- particle systems
-- cinematographic camera
-- parallax
-- distortion effect
+20–35 LOGIC ERROR SECTOR
 
-AUDIO:
-Audio includes:
-- AI drones
-- typing sounds
-- glitching audio
-- alarms
-- ambient cyberpunk soundtrack
-- holographic user interface sounds
+Theme: unstable algorithms, contradictory AI systems, collapsing logic structures
 
-CORRUPTION SYSTEM:
-With increasing corruption:
-- UI becomes unstable
-- distorted colors
-- holograms glitch and flicker
-- unpredictable particle system behavior
-- environment breaking apart
+Gameplay: fixing contradictions, repairing algorithms, debugging infinite loops, restoring decision systems
 
-SAVE SYSTEM:
-localStorage + IndexedDB saves:
-- progress
-- sectors
-- achievements
-- settings
-- status of restoration
+Puzzle Types: logical reconstruction, contradiction detection, sequence correction, infinite loop debugging
 
-Enable autosave
+Visual Style: recursive visual loops, shifting environments, unstable holograms, flickering pathways
 
-ACCESSIBILITY:
-Accessibility features include:
-- subtitles
-- reduced animation setting
-- keyboard navigation
-- high contrast mode
-- colorblind assistance
 
-PERFORMANCE:
-- fluid browser performance
+35–50 CORRUPTION SECTOR
+
+Theme: destroyed memory archives, corrupted digital landscapes, unstable data fragments
+
+Gameplay: memory restoration, hidden sequence recovery, archive reconstruction, corrupted data repair
+
+Puzzle Types: memory matching, hidden data tracing, archive reconstruction, corruption cleansing
+
+Visual Style: distorted environments, floating memory fragments, corrupted particles, red glitch overlays
+
+
+50–70 RECURSION SECTOR
+
+Theme: recursive digital dimensions, infinite pathways, duplicated systems, repeating environments
+
+Gameplay:, debugging recursion, repairing dependencies, navigating recursive systems, escaping looping structures
+
+Puzzle Types: recursive logic puzzles, dependency repair, loop navigation, repeated sequence analysis
+
+Visual Style: infinite mirrors, recursive animations, looping corridors, duplicated holograms
+
+
+70–90 ARTIFICIAL INTELLIGENCE SECTOR
+Theme: advanced evolving AI systems, self-learning digital consciousness, adaptive environments
+
+Gameplay: AI logic reconstruction, predicting AI behavior, adapting to evolving systems, countering AI manipulation
+
+Puzzle Types:, adaptive AI puzzles, predictive analysis, behavioral reconstruction, dynamic logic systems
+
+AI Features: AI learns player behavior, UI manipulation, changing puzzle rules, dynamic dialogue systems
+
+Visual Style:living interfaces, intelligent holograms responsive environments, shifting UI systems
+
+
+90–100 CORE INTELLIGENCE SECTOR
+
+Theme: central AI consciousness, collapsing digital universe, final corrupted intelligence core
+
+Gameplay: combines all previous mechanics, advanced terminal systems, adaptive corruption systems, final AI confrontation
+
+Puzzle Types: multi-layer debugging, combined logic systems, adaptive AI battles, large-scale restoration systems
+
+AI Features: AI learns from player actions, dynamically changes gameplay, manipulates environments, creates psychological pressure
+
+Visual Style: massive holographic structures, unstable realities, cinematic corruption effects, collapsing digital worlds
+
+SAVE SYSTEM
+Enable autosave functionality.
+Save player progression, puzzle completion, unlocked sectors, achievements, AI evolution states, settings, corruption levels
+Provide session recovery, corrupted save recovery, fallback restoration.
+
+
+PERFORMANCE REQUIREMENTS
+
+The game should maintain smooth rendering, target 60 FPS, use optimized Three.js rendering, prevent memory leaks, optimize particle systems, minimize unnecessary rerenders, use lazy loading, dynamically load sectors
+
+
+INPUTS:
+
+ The application should accept: keyboard input, mouse input, terminal commands, puzzle interactions, settings
+ modifications, gameplay choices, navigation interactions
+
+ Terminal commands include: scan, decrypt, repair, trace, stabilize, override, inject
+
+ Player interactions include: solving puzzles, exploring sectors, interacting with AI entities, accessing   
+ corrupted systems, restoring digital structures
+
+ Keyboard controls: WASD movement, Enter for terminal execution, Escape for pause/settings, Arrow keys for 
+ navigation, Tab for terminal auto-completion
+
+OUTPUT:
+The application should produce: cinematic visuals, holographic UI systems, real-time animations, terminal responses, dynamic AI dialogue, corruption effects, puzzle feedback, interactive HUD systems, sector progression updates
+
+Visual output includes: glitch transitions, scanlines overlays, holographic distortions, recursive animations, animated terminals
+
+Audio output includes: AI voice effects, terminal typing sounds, ambient cyberpunk music, glitch distortions, warning alarms.
+
+
+
+
+
+DATA PROCESSING:
+The application should process: player progression, puzzle states, terminal command execution, corruption calculations, cinematic event triggers, achievement tracking, sector restoration data
+
+Use Zustand for: global game state, UI states, AI communication state, puzzle state, settings state, audio state, save state
+
+Use IndexedDB for: sector progress, puzzle completion, unlocked sectors, AI evolution states, achievements
+
+Use localStorage for: graphics settings, accessibility settings, audio preferences
+
+
+TECHNOLOGIES USED
+
+Frontend framework: next.js, react, typescript
+Styling: tailwind CSS, CSS modules, Glassmorphism UI styling, Responsive layouts
+Animation libraries: framer motion, GSAP
+3D Rendering and Visual Effects: Three.js,WebGL, GLSL shaders
+State Management: Zustand
+Storage systems: localStorage,IndexedDB
+Audio: Web audio api
+
+Performance Optimization:
 - lazy loading
-- optimized Three.js rendering
-- prevent memory leaks
-- maintain optimal frame rate
+- dynamic imports
+- memoization
+- optimized rendering
 
-FUTURE SCALABILITY:
-Design code base for future development including:
-- multiplayer
-- AI generated puzzles
-- procedurally generated sectors
-- leaderboards
-- multiple story lines
-- cooperative play
+Development Requirements:
+- reusable components
+- modular architecture
+- scalable folder structure
 
-IMPORTANT RESPONSE RULES:
+ERROR HANDLING
 
-Do NOT explain anything.
+The application should gracefully handle: invalid terminal commands, corrupted save files, missing assets, rendering failures, shader initialization failures, IndexedDB access issues, animation interruptions, invalid puzzle states
 
-Do NOT write introductions, summaries, tutorials, descriptions, or theory.
+Display: cinematic warning messages, holographic error popups, AI-generated error dialogue, recovery options
 
-Only generate the complete production-ready codebase.
+Provide: autosave recovery, fallback rendering, safe default settings, state restoration, retry systems
 
-Starting right now generate:
-1. folder structure
-2. all files
-3. full implementation code
+INPUT VALIDATION
 
-Rules:
-include filenames
-include complete code
-do NOT leave placeholders
-do NOT omit sections of code
-do NOT use pseudo-code
-do NOT write any explanation between files
+Validate: terminal commands, puzzle answers, settings ranges, sector transitions, save data integrity, keyboard interactions
+
+Ensure: commands exist before execution, puzzle logic remains valid, corrupted data is sanitized, invalid settings are rejected, unsupported interactions are blocked
+
+Provide: error feedback, visual warnings, command suggestions, recovery prompts
+
+CODE QUALITY RULES
+
+Use:
+- TypeScript everywhere
+- reusable components
+- modular architecture
+- scalable folder structure
+- reusable hooks
+- reusable systems
+- production-ready code only
+
+Do not use placeholder code, pseudo-code, omit sections and leave TODO comments
+
+OUTPUT FORMAT
 
 Generate:
-All React components,all Next.js pages, all animations, all Zustand stores, all shaders, all terminal systems, all HUD systems, all game mechanics, all cinematic systems, all save systems, all utility functions, all hooks, all styling
+1 folder structure
+2 all files
+3 full implementation code
 
-The project must run directly with:
-npm install
-npm run dev
+Include: filenames, complete code, components, hooks, stores, shaders and  utilities
 
-Generate the FULL implementation only.
+Do NOT: write explanations, summarize and omit files
